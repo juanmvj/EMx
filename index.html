@@ -119,6 +119,25 @@
                 
              <iframe id="map_canvas1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.8690743321895!2d-99.18626650079722!3d19.331486768822547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0003feeabbbb%3A0xa6649c92297beb62!2sAuditorio+Javier+Barros+Sierra!5e0!3m2!1ses-419!2smx!4v1490979072250" width="100%" height="450" frameborder="0" style="border:0"></iframe>
              </section>
+             <section id="formulario" class="form">
+                 
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfI0tWOuQuprThf0QgCsjNSDf0mQTCfJLB7Jl82pTtcx15TFw/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" id="formulario_1">Loading...</iframe>
+                   
+               
+             </section>
+                
+                <script>
+                    $(document).ready(function(){
+                        $('#formulario_1').addClass('scrolloff');
+                        $('#formulario').on('click', function(){
+                        $('#formulario_1').removeClass('scrolloff');
+                        });
+                        $("#formulario_1").mouseleave(function(){
+                            $('#formulario_1').addClass('scrolloff');
+                        });
+
+                    });
+                </script>
 
             <script>
                 $(document).ready(function () {
@@ -140,19 +159,20 @@
             <!-- Termina parte del mapa-->
                         
         </div>
-            <div class="row">
+            <div class=" row">
                 <div class="col-md-4">
                 </div>
                     <div class="col-md-4">
                             <div class="text-center buu">
-                                    <a class="btn btn-social-icon btn-facebook btn-lg">
+                                    <a class="btn btn-social-icon btn-facebook btn-lg" href="https://www.facebook.com/CETIEM/?fref=ts"
+                                    target="_blank">
                                         <span class="fa fa-facebook"></span>
                                     </a>
-                                        <a class="btn btn-social-icon btn-twitter btn-lg">
+                                        <a class="btn btn-social-icon btn-twitter btn-lg" href="https://twitter.com/CETIEM" target="_blank">
                                         <span class="fa fa-twitter"></span>
                                     </a>
 
-                                         <a class="btn btn-social-icon btn-adn btn-lg">
+                                         <a class="btn btn-social-icon btn-adn btn-lg" href="https://www.instagram.com/cetiem/" target="_blank">
                                         <span class="fa fa-instagram"></span>
                                      </a>
 
